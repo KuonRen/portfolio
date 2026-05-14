@@ -1,15 +1,40 @@
-header h1 {
-    text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/white_background.jpg);
 }
 
-footer p {
+header {
+    background-color: #1d1b3f;
+
+}
+
+header h1 {
+    color: #ff5a91;
     text-align: center;
-    font-size: 10px;
+    margin: 0;
+}
+
+header a{
+    color: inherit;
+    text-decoration: none;
+}
+
+main{
+}
+
+main h1 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.main{
+    align-content: auto;
 }
 
 /* From Uiverse.io by joe-watson-sbf */ 
 .card {
-    width: 350px;
+    width: 420px;
     height: 254px;
     border-radius: 4px;
     background: #212121;
@@ -20,7 +45,7 @@ footer p {
     margin: auto;
 }
 
-.card p {
+.card a {
     height: 100%;
     flex: 1;
     overflow: hidden;
@@ -32,13 +57,14 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
-.card p:hover {
+.card a:hover {
     flex: 4;
 }
 
-.card p span {
+.card a :where(span) {
     min-width: 14em;
     padding: .5em;
     text-align: center;
@@ -51,8 +77,30 @@ footer p {
 }
 
 
-.card p:hover span {
+.card a:hover span {
     transform: rotate(0);
     white-space: normal; 
     width: 100%;
+}
+
+.footerFixed {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    background: #1d1b3f;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 10px;
 }
